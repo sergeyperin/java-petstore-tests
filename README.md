@@ -15,7 +15,7 @@ $ mvn -Dtest.env="local" clean verify
 
 # Tests execution results on CI
 You can see the tests are being passed on remote github host using CI workflow on Mac OS.
-
+https://github.com/sergeyperin/java-petstore-tests/actions/runs/9448890325/job/26023882083
 
 
 # Coverage
