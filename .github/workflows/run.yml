@@ -16,5 +16,5 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Run testss
+      - name: Run tests
         run: mvn -Dtest.env="local" clean verify
