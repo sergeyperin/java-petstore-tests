@@ -1,10 +1,9 @@
 package features;
 
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
-import cucumber.api.CucumberOptions;
-import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(

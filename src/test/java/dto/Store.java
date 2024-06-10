@@ -2,8 +2,10 @@ package dto;
 
 import org.joda.time.format.ISODateTimeFormat;
 
+import java.math.BigInteger;
+
 public class Store {
-    private Integer id;
+    private BigInteger id;
     private Integer petId;
     private Integer quantity;
     private String shipDate;
@@ -12,13 +14,11 @@ public class Store {
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public Store() {
     }
 
     /**
-     *
      * @param petId
      * @param quantity
      * @param id
@@ -26,8 +26,7 @@ public class Store {
      * @param complete
      * @param status
      */
-    public Store(Integer id, Integer petId, Integer quantity, String shipDate, String status, Boolean complete) {
-        super();
+    public Store(BigInteger id, Integer petId, Integer quantity, String shipDate, String status, Boolean complete) {
         this.id = id;
         this.petId = petId;
         this.quantity = quantity;
@@ -36,11 +35,11 @@ public class Store {
         this.complete = complete;
     }
 
-    public Integer getId() {
+    public BigInteger getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(BigInteger id) {
         this.id = id;
     }
 

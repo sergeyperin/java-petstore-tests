@@ -1,0 +1,18 @@
+username:
+password:
+envs:
+  local:
+    url: "https://petstore.swagger.io/v2"
+    connectionTimeout:
+    remoteHosts:
+    retry:
+  staging:
+    url: "https://petstore.swagger.io/v2"
+    connectionTimeout:
+    remoteHosts:
+    retry:
+  dev:
+    url: "https://petstore.swagger.io/v2"
+    connectionTimeout:
+    remoteHosts:
+    retry:
