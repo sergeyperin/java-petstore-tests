@@ -1,0 +1,20 @@
+name: Tests execution
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    timeout-minutes: 5
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '16'
+          distribution: 'temurin'
+      - name: Run testss
+        run: mvn -Dtest.env="local" clean verify
